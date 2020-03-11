@@ -1,0 +1,163 @@
+/**{
+	border: 1px solid white;
+	box-sizing: border-box;
+}*/
+
+body {
+	background-color: hsl(0, 0%, 20%);
+	color: hsl(0, 0%, 80%);
+	line-height: 1.5;
+	text-align: justify;
+}
+
+header {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+#navbar header {
+	text-align: center;
+}
+
+#navbar {
+	padding-top: 20px;
+	position: fixed;
+	width: 300px;
+	height: 100%;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	border-right: 1px solid hsl(0, 0%, 80%);
+}
+
+#navbar ul {
+	padding: 0;
+	font-size: 1.2em;
+}
+
+#navbar ul li {
+	list-style-type: none;
+	padding-top: 8px;
+	padding-left: 28px;
+	padding-bottom: 14px;
+	border-top: 1px solid hsl(0, 0%, 80%);
+}
+
+main {
+	width: 60%;
+	max-width: 1000px;
+	min-width: 300px;
+	margin-left: 300px;
+	padding-left: 30px;
+}
+
+code {
+	background-color: hsl(0, 0%, 30%);
+	margin: 10px;
+	padding: 10px;
+	display: block;
+	white-space: pre-wrap;
+	text-align: left;
+	border-radius: 15px;
+}
+
+a {
+	color: hsl(0, 0%, 90%);
+}
+
+footer {
+	margin-left: 300px;
+	text-align: center;
+}
+
+hr {
+	border: 0;
+	height: 1px; 
+	width: 90%;
+	background-image: linear-gradient(to right, rgba(166, 204, 227, 0), rgba(166, 204, 227, 0.75), rgba(166, 204, 227, 0));
+}
+
+@media (max-width: 900px) {
+	#navbar {
+		font-size: 0.75em;
+		width: 100px;
+		text-align: left;
+	}
+
+	#navbar header {
+		font-size: 1em;
+		margin-top: 10px;
+	}
+
+	#navbar ul li {
+		padding-left: 5px;
+		padding-top: 2px;
+		padding-bottom: 5px;
+	}
+
+	main {
+		margin-left: 100px;
+		width: 70%;
+	}
+
+	footer {
+		margin-left: 100px;
+	}
+}
+
+@media (max-width: 480px) {
+	#navbar {
+		position: absolute;
+		font-size: 0.75em;
+		width: 99.5%;
+		text-align: left;
+		top: 0;
+		max-height: 180px;
+		overflow: auto;
+
+	}
+
+	#navbar header {
+		font-size: 1.5em;
+		margin-top: 0px;
+	}
+
+	#navbar ul {
+		height: 162px;
+		margin-top: 10px;
+	}
+
+	#navbar ul li {
+		padding-left: 5px;
+		padding-top: 2px;
+		padding-bottom: 5px;
+		border: 1px solid hsl(0, 0%, 80%);
+	}
+
+	main {
+		position: relative;
+		width: 90%;
+		margin: 200px 0 0 0;
+		border-top: 1px solid hsl(0, 0%, 80%);
+		padding: 5px;
+	}
+
+	code {
+		width: 90%;
+		margin: 0;
+		font-size: 90%;
+	}
+
+	footer {
+	margin: 0px;
+	text-align: center;
+	}
+
+	hr {
+	border: 0;
+	height: 1px; 
+	width: 90%;
+	background-image: linear-gradient(to right, rgba(166, 204, 227, 0), rgba(166, 204, 227, 0.75), rgba(166, 204, 227, 0));
+}
+}
